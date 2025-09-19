@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Timetable Generator</title>
+  <script src="generateTimetable.js" defer></script>
+</head>
+<body>
+  <h1>Timetable Generator</h1>
+  <form id="timetableForm">
+    <label>Number of classrooms: <input type="number" name="classrooms" required></label><br>
+    <label>Number of batches: <input type="number" name="batches" required></label><br>
+    <label>Subjects (comma separated): <input type="text" name="subjects" required></label><br>
+    <label>Max classes per day: <input type="number" name="maxClasses" required></label><br>
+    <label>Faculties (comma separated): <input type="text" name="faculties" required></label><br>
+    <button type="submit">Generate Timetable</button>
+  </form>
+
+  <h2>Generated Timetable</h2>
+  <div id="output"></div>
+</body>
+</html>
